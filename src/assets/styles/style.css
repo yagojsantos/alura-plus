@@ -3,6 +3,7 @@
     --cor-principal: #FFFFFF;
     --cor-secundaria:#C0C0C0;
     --cor-fundo-botao: #167BF7;
+    --cor-fundo-botao-efeito: #3c92fa;
     --cor-fundo-pagina: #00030C;
     --fonte-principal:'Inter', sans-serif;
 }
@@ -49,6 +50,10 @@ body{
     display: block;
     text-decoration: none;
     margin-bottom: 1em;
+}
+.container__botao:hover{
+    background-color: var(--cor-fundo-botao-efeito);
+    color: var(--cor-fundo-pagina);
 }
 .botao_secundario{
     border: 2px solid var(--cor-principal);
@@ -97,4 +102,37 @@ body{
 .lista__item{
     font-size: 32px;
     color: var(--cor-principal);
+}
+.rodape{
+    text-align: center;
+    margin: 5em 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+.rodape__lista{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 1em;
+    list-style-type: none;
+}
+.lista__link{
+    text-decoration: none;
+    color: var(--cor-principal);
+}
+.lista__link a{
+    text-decoration: none;
+    color: var(--cor-principal);
+}
+.lista__link a:hover{
+    color: var(--cor-fundo-botao);
+}
+.lista__link a:active{
+    color: purple;
+}
+.rodape__texto{
+    font-size: 14px;
+    color: var(--cor-secundaria);
 }
