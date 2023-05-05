@@ -41,6 +41,7 @@ body{
 }
 .container__imagem{
     margin: 1rem 0 2.2rem 0;
+    width: 80%;
 }
 .container__botao{
     background-color: var(--cor-fundo-botao);
@@ -201,5 +202,23 @@ body{
     }
     .secundario, .dispositivos{
         margin: 0 2rem;
+    }
+}
+@media screen and (min-width:769px) and (max-width:992px){
+    .principal{
+        background-image: url(../img/backgroundMenor.png);
+        background-size: cover;
+    }
+    .principal{
+        align-items:start;
+    }
+    .container{
+        height: 50vh;
+    }
+    .container__caixa{
+        background-color: rgba(4, 0, 27, 0.575);
+        padding: 1rem;
+        border-radius: 2rem;
+        margin:4rem;
     }
 }
