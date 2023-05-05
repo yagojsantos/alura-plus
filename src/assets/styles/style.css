@@ -159,7 +159,7 @@ body{
         width: 80%;
     }
     .container__botao{
-        max-width: 80%;
+        width: 80%;
         margin: 0 auto 1.6rem;
     }
     .secundario__botao{
@@ -175,5 +175,31 @@ body{
    
 }
 @media screen and (min-width:601px) and (max-width:768px) {
-    
+    .principal{
+        background-image: none;
+    }
+    .container.principal{
+        display: block;
+    }
+    .container__caixa{
+        margin: 4rem 2rem;
+        height: 100%;
+    }
+    .container__titulo{
+        font-size: 3.5rem;
+        margin-bottom: 7rem;
+    }
+    .container__imagem{
+        width: 70%;
+    }
+    .container__botao{
+        width: 70%;
+        margin: 0 auto 1.6rem;
+    }
+    .secundario__botao{
+        margin-top: 1rem;
+    }
+    .secundario, .dispositivos{
+        margin: 0 2rem;
+    }
 }
