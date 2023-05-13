@@ -24,13 +24,15 @@ body{
     background-image: url("../img/Background.png");
     background-repeat: no-repeat;
     background-size: contain;
-    align-items: center;
+    align-items: flex-start;
     text-align: center;
+    overflow: scroll;
 }
 .container{
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(2, 50%);
+    text-align: center;
 }
 .container__descricao{
     padding: 2rem;
@@ -65,7 +67,7 @@ body{
     color: var(--cor-secundaria);
 }
 .container__caixa{
-    margin: 0 6rem;
+    margin: 6rem;
 }
 .secundario{
     align-items: center;
@@ -141,7 +143,7 @@ body{
 
 /* TESTANDO TAMANHOS DE MEDIA */
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) and (orientation: portrait){
     .principal{
         background-image: none;
     }
@@ -173,18 +175,23 @@ body{
     .dispositivos__titulo{
         font-size: 4rem;
     }
-   
+
 }
 @media screen and (min-width:601px) and (max-width:768px) {
     .principal{
-        background-image: none;
+        background-image: url(../img/backgroundMenor.png);
+        background-size: cover;
     }
     .container.principal{
-        display: block;
+        display: grid;
+        grid-template-columns: 100%;
     }
     .container__caixa{
-        margin: 4rem 2rem;
+        margin: 0;
+        padding-top: 4rem;
         height: 100%;
+        width: 100%;
+        background: linear-gradient(to bottom, rgba(255,0,0,0) -10%,rgb(0, 3, 12,1) 100%);
     }
     .container__titulo{
         font-size: 3.5rem;
@@ -209,14 +216,8 @@ body{
         background-image: url(../img/backgroundMenor.png);
         background-size: cover;
     }
-    .principal{
-        align-items:start;
-    }
-    .container{
-        height: 50vh;
-    }
     .container__caixa{
-        background-color: rgba(4, 0, 27, 0.575);
+        background-color: #00030cba;
         padding: 1rem;
         border-radius: 2rem;
         margin:4rem;
