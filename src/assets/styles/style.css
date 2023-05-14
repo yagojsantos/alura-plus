@@ -20,10 +20,13 @@ body{
     margin: 0;
     box-sizing: border-box;
 }
+.container.principal{
+    height: auto;
+}
 .principal{
     background-image: url("../img/Background.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     align-items: flex-start;
     text-align: center;
     overflow-y: auto;
